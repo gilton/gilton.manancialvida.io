@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html body {
+    margin: 0;
+    padding: 0;
+    background: #c8c8c8;
+}
+/* 
+html body section {
+    margin-top: 3rem;
+} */
+
+.wrap {
+    margin: auto;
+    height: 435px;
+    width: 960px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.header .quickaccess {
+    margin: 0;
+    display: flow-root;
+}
+
+.quickaccess .details-left {
+    float: left;
+    line-height: 1;
+}
+
+.details-left span {
+    color: #000;
+    font-size: 10pt;
+    font-style: italic;
+}
+
+.quickaccess .details-right {
+    float: right;
+    display: flex;
+}
+
+.details-right a {
+    list-style: none;
+    color: rgba(255,255,255,.5);
+}
+
+.details-right a .svg-inline--fa {
+    font-size: 1.35rem;
+    width: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.header .logo {
+    margin: 0;
+    text-align: right;
+    position: relative;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.header .gallery {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.header .gallery img {
+    height: 500px;
+    width: 960px;
+}
+
+img.action {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    -webkit-animation: mymove 10s infinite linear; /* Chrome, Safari, Opera */
+    animation: mymove 10s infinite linear;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {z-index: 3;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {z-index: 3;}
+}
+
+.header .menu {
+    /* overflow: hidden; */
+    background-color: rgba(255, 255, 255, 0.58);
+    position: relative;
+    width: 960px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 150;
+}
+
+.header nav div.wrap {
+    height: auto;
+    width: 920px;
+}
+
+.header .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header .menu ul li {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.header .menu ul li a.alerta {
+    color: darkred;
+    text-shadow: 2px 2px 10px red;
+}
+
+.header .menu ul li a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #17385a;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.header .menu ul li a:hover {
+    color: #fff;
+    background: #007bff;
+}
+
+/* SECTION DESTAQUE */
+
+.destaque {
+    overflow: hidden;
+    margin: 45px auto 0;
+}
+
+.destaque .wrap {
+    height: auto;
+}
+
+section h2 {
+    border-right: none;
+    border-left: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 14pt;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin: 0;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.destaque .caption {
+    background-color: rgba(0,0,0,.65);
+    width: 958px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.destaque .caption h2 {
+    background: none;
+}
+
+.destaque img {
+    border: 1px solid #fff;
+    height: 260px;
+    width: 635px;
+}
+
+.destaque .btnNav {
+    width: 3rem;
+}
+/* FIM DESTAQUE */
+
+/* SECTION NOTÍCIAS */
+.noticias {
+    margin-top: 1rem;
+}
+
+.noticias .wrap {
+    height: auto;
+}
+
+.noticias .card-deck {
+    margin-top: 0.5rem;
+}
+
+.card-news {
+    width: 14rem;
+}
+
+.card-news a {
+    text-decoration: none;
+}
+
+.card-news a:hover {
+    color: #007bff;
+}
+
+.card-news .card-body {
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+.card-news .card-body .small-text {
+    margin-top: -1rem;
+}
+/* FIM NOTÍCIAS */
+
+/* SECTION CRONOGRAMA */
+.cronograma {
+
+}
+
+.cronograma .wrap {
+    height: auto;
+}
+
+.cronograma nav .nav-tabs {
+    text-transform: uppercase;
+}
+
+.cronograma nav .nav-tabs .active {
+    background-color: #fff;
+}
+
+.cronograma .tab-content .tab-pane  {
+    background-color: rgba(176, 196, 222, 0.5);
+}
+
+.cronograma .tab-content .tab-pane ul li {
+    background: none;
+    padding: 0;
+}
+
+.cronograma .tab-content .tab-pane ul li p {
+    margin: 0;
+}
+
+.cronograma .tab-content .tab-pane ul li.p-horizon p {
+    
+}
+
+
+/* FIM CRONOGRAMA */
+
+/* MIDIA navegação (menu) */
+div .column-1 {
+    padding: 0;
+    text-align: center;
+    border-left: 1px solid;
+    border-color: #dee2e6;
+    text-transform: uppercase;
+}
+
+.column-1 .nav-tabs a {
+    border-radius: 0;
+}
+
+.column-1 .nav-tabs .nav-link.active, 
+.nav-tabs .nav-item.show .nav-link {
+    border-color: transparent;
+    background-color: #b0c4de;
+    color: #fff;
+}
+
+/* FIM MIDIA */
+
+/* CARROUSEL */
+.carrousel {
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.carrousel .wrap {
+    height: auto;
+}
+
+.carrousel .galleria {
+    text-align: center;
+    height: 165px;
+    width: 855px;
+    padding: 2px;
+    background-color: #b0c4de;
+    border-bottom: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+}
+
+.carrousel .galleria img {
+    /* height: 120px;
+    width: 150px; */
+    height: 70px;
+    width: 100px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.carrousel .carousel-inner div a {
+    display: inline-block;
+}
+
+.carrousel .btnNav {
+    width: 2rem;
+}
+/* FIM CARROUSEL */
+
+/* CONTEUDO */
+.conteudo {
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.conteudo .wrap {
+    height: auto;
+}
+
+.conteudo .wrap .row {
+    width: 975px;
+    margin: 1px;
+}
+
+.conteudo img {
+    height: 190px;
+    width: 310px;
+}
+
+.column-3 {
+    background: #fff;
+    height: 420px;
+    width: 313px;
+    float: left;
+    margin: 0 10px 0 0;
+    border: 1px solid #fff;
+}
+
+.column-3 a  {
+    text-decoration: none;
+    color: #1a7aa0;
+}
+
+.column-3 a:hover  {
+    text-decoration: none;
+}
+
+.column-3 img  {
+    display: block;
+}
+
+.column-3 a h2 {
+    font-size: 18pt;
+    text-transform: uppercase;
+    color: #0c42a7dc;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.column-3 a p {
+    text-align: justify;
+}
+/* FIM CONTEÚDO */
+
+
+.footer {
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: #fff;
+    background: #051a5eda;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer .wrap {
+    height: auto;
+}
+
+.footer .logo {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 8pt;
+}
+
+
+/* MEDIA SCREEN */
+
+@media screen and ( max-width: 980px ) {
+    .header{
+        position: inherit;
+    }
+    
+    .wrap{
+        width: 100%;
+    }
+    
+    .header .logo {
+        display: block;
+        margin: auto;
+        width: 213px;
+        height: 120px;
+    }
+    
+    .header .menu ul li {
+        display: block;
+        margin: 0;
+        width: 20%;
+        text-align: center;
+    }
+    
+    .header .menu ul li a {
+        padding: 15px 0;
+        font-size: 12pt;
+    }
+    
+    
+    @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
+    @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+    @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+    @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+    @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+    @media (min-width:1281px) { /* hi-res laptops and desktops */ } 
+    
+    
+}

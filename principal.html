@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Igreja Manacial da Vida  </title>
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/principal.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/ekko-lightbox/ekko-lightbox.css">
+    
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/ekko-lightbox/ekko-lightbox.js" ></script>
+    <script src="js/bootstrap/bootstrap.js" ></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+            $(function () {
+                $('.example-popover').popover({
+                    container: 'body'
+                })
+            })
+        });
+    </script>
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap">
+            <div class="quickaccess">
+                <div class="details-left">
+                    <span> 
+                        <i class="fas fa-mobile-alt"></i>
+                        +55 (82) 9-98874-2443 
+                    </span>
+                    <span>|</span>
+                    <span> 
+                        <i class="far fa-envelope"></i>
+                        contato@imanancialdavida.com 
+                    </span>
+                </div>
+                <div class="details-right">
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>    
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="img/logo1a.png" alt="logo"/>
+            </div>
+            <div class="gallery">
+                <img class="action" src="img/meditando.jpeg" alt="meditando" style="z-index:3;" />
+                <img class="action" src="img/retiro.jpg" alt="retiro" style="z-index:2;" />
+            </div>
+        </div>
+        <nav class="menu navbar navbar-light" >
+            <div class="wrap">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="principal.html" alt="Página Inicial" >  Início   </a>
+                    </li>
+                    <li  class="nav-item">
+                        <a href="mensagens.html"  alt="Mensagens"> Mensagens </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nossa Igreja</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">história</a>
+                            <a class="dropdown-item" href="#">testemunhos</a>
+                            <a class="dropdown-item" href="#">Ministérios</a>
+                            <a class="dropdown-item" href="#">Localidade</a>
+                            <div class="dropdown-divider" style="border-top: 1px solid #d4e1ef;"></div>
+                            <a class="dropdown-item" href="#h2midia">Mídia</a>
+                            <a class="dropdown-item" href="#">trabalhos vonluntários</a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="aovivo.html" alt="Transmissão" class="alerta"> Transmissão </a><li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="destaque">
+            <div class="wrap">
+                <h2>Destaques</h2>
+                <div id="dslider" class="carousel slide carousel-fade" data-ride="carousel" >
+                    <ol class="indicador carousel-indicators">
+                        <li data-target="#dslider" data-slide-to="0" class="active"></li>
+                        <li data-target="#dslider" data-slide-to="1"></li>
+                        <li data-target="#dslider" data-slide-to="2"></li>
+                    </ol>
+                    
+                    <div class="carousel-inner">
+                        <div class="carousel-item active imagem">
+                            <img src="img/destaque.jpg" class="d-block w-100" alt="...">
+                            <div class="caption carousel-caption d-none d-md-block">
+                                <h2>First slide label</h2>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item imagem">
+                            <img src="img/heartgroup.jpg" class="d-block w-100" alt="...">
+                            <div class="caption carousel-caption d-none d-md-block">
+                                <h2>Second slide label</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>    
+                        </div>
+                        <div class="carousel-item imagem">
+                            <img src="img/social.jpg" class="d-block w-100" alt="...">
+                            <div class="caption carousel-caption d-none d-md-block">
+                                <h2>Third slide label</h2>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev btnNav" href="#dslider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next btnNav" href="#dslider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    
+                </div>
+                
+            </section>
+            
+            <section class="noticias">
+                <div class="wrap">
+                    <h2 id="h2news">Notícias</h2>
+                    <div class="card-deck">
+                        
+                        <div class="card card-news mb-3 border-light bg-transparent">
+                            <a href="#" class="card-link">
+                                <h5 class="bg-transparent card-header card-cabeca">Card title</h5>
+                                <div class="card-body text-dark">
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text text-right small-text">
+                                        <small class="text-muted">atualizado a 3 mins</small>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card card-news mb-3 border-light bg-transparent">
+                            <a href="#" class="card-link">
+                                <h5 class="bg-transparent card-header card-cabeca">Card title</h5>
+                                <div class="card-body text-dark">
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text text-right small-text">
+                                        <small class="text-muted">atualizado a 3 mins</small>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card card-news mb-3 border-light bg-transparent">
+                            <a href="#" class="card-link">
+                                <h5 class="bg-transparent card-header card-cabeca">Card title</h5>
+                                <div class="card-body text-dark">
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text text-right small-text">
+                                        <small class="text-muted">atualizado a 3 mins</small>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card card-news mb-3 border-light bg-transparent">
+                            <a href="#" class="card-link">
+                                <h5 class="bg-transparent card-header card-cabeca">Card title</h5>
+                                <div class="card-body text-dark">
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text text-right small-text">
+                                        <small class="text-muted">atualizado a 3 mins</small>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <section class="cronograma">
+                <div class="wrap">
+                    <h2 id="h2crono">Programações</h2>
+                    <div class="row">
+                        <nav class="col-12 mt-1">
+                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-cultos-tab" data-toggle="tab" href="#nav-cultos" role="tab" aria-controls="nav-cultos" aria-selected="true">Cultos</a>
+                                <a class="nav-item nav-link" id="nav-eventos-tab" data-toggle="tab" href="#nav-eventos" role="tab" aria-controls="nav-eventos" aria-selected="false">Eventos</a>
+                                <a class="nav-item nav-link" id="nav-visitas-tab" data-toggle="tab" href="#nav-visitas" role="tab" aria-controls="nav-visitas" aria-selected="false">Visitações</a>
+                                <a class="nav-item nav-link" id="nav-aniversarios-tab" data-toggle="tab" href="#nav-aniversarios" role="tab" aria-controls="nav-aniversarios" aria-selected="false">Aniversários</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content col-12" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-cultos" role="tabpanel" aria-labelledby="nav-cultos-tab">
+                                <ul class="list-group list-group-horizontal-sm col-12 border border-light rounded-bottom rounded-right">
+                                    <li class="list-group-item border-0 py-3 px-3">
+                                        <h5>Terças-feiras</h5>
+                                        <p>20hs - Culto de Oração</p>
+                                    </li>
+                                    <li class="list-group-item border-0 py-3 px-3">
+                                        <h5>Quintas-feiras</h5>
+                                        <p>19h30 - Culto do Espírito Santo</p>
+                                    </li>
+                                    <li class="list-group-item border-0 py-3 px-3">
+                                        <h5>Domingos</h5>
+                                        <p>10hs - EBD (Escola Bíblica Dominical)</p>
+                                        <p>18hs - Culto Evangelístico</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="nav-eventos" role="tabpanel" aria-labelledby="nav-eventos-tab">
+                                <ul class="list-group list-group-horizontal-sm col-12 border border-light rounded-bottom rounded-right">
+                                    <li class="list-group-item border-0 py-3 px-3 col-4">
+                                        <h5>RHREMA - Aulas Abertas</h5>
+                                        <p>19h45 às 22hs - 1º Mês (Março) do Curso</p>
+                                    </li>
+                                    <li class="list-group-item border-0 py-3 px-3 col-4">
+                                        <h5>Palestras (ainda a definir) </h5>
+                                        <p>Controle Financeiro Pessoal</p>
+                                        <p>Edificando a sua Casa <p>
+                                            <p>Edificando Famílias </p>
+                                        </li>
+                                        <li class="list-group-item border-0 py-3 px-3 col-4">
+                                            <h5>Conferência Profética</h5>
+                                            <p>10hs - EBD (Escola Bíblica Dominical)</p>
+                                            <p>18hs - Culto Evangelístico</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="nav-visitas" role="tabpanel" aria-labelledby="nav-visitas-tab">
+                                    <ul class="list-group list-group-horizontal-sm col-12 border border-light rounded-bottom rounded-right">
+                                        <li class="list-group-item border-0 py-3 px-3">
+                                            <h5 class="d-inline">Visitas Pastorais</h5>
+                                            <small class="d-block text-muted small pb-2">
+                                                (As visitas podem serem realizadas pelo próprio pastor ou pelo corpo diaconal.)
+                                            </small>
+                                            <p class="d-inline mr-3">02/abril - Silvana</p>
+                                            <p class="d-inline mr-3">05/abril - Roseanne</p>
+                                            <p class="d-inline mr-3">11/abril - Rosita</p>
+                                            <p class="d-inline mr-3">18/abril - Elton</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="nav-aniversarios" role="tabpanel" aria-labelledby="nav-aniversarios-tab">
+                                    <ul class="list-group list-group-horizontal-sm col-12 border border-light rounded-bottom rounded-right">
+                                        <li class="list-group-item border-0 py-3 px-3">
+                                            <h5 class="d-block pb-2">Aniversariantes do Mês</h5>
+                                            <p class="d-inline mr-3">02/abril - Silvana</p>
+                                            <p class="d-inline mr-3">05/abril - Roseanne</p>
+                                            <p class="d-inline mr-3">11/abril - Rosita</p>
+                                            <p class="d-inline mr-3">18/abril - Elton</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </section> 
+                
+                <section class="carrousel">
+                    <div class="wrap">
+                        <h2 id="h2midia">Mídias</h2>
+                        <nav>
+                            <div class="row" style="margin: 0;">
+                                <div class="column-1">
+                                    <div class="nav nav-tabs flex-column" id="nav-tab" role="tablist" aria-orientation="vertical">
+                                        <a class="nav-item nav-link active" id="nav-foto-tab" data-toggle="tab" href="#nav-foto" role="tab" aria-controls="nav-foto" aria-selected="true">Fotos</a>
+                                        <a class="nav-item nav-link" id="nav-card-tab" data-toggle="tab" href="#nav-card" role="tab" aria-controls="nav-card" aria-selected="false">Cards</a>
+                                        <a class="nav-item nav-link" id="nav-podcast-tab" data-toggle="tab" href="#nav-podcast" role="tab" aria-controls="nav-podcast" aria-selected="false">Podcast</a>
+                                        <a class="nav-item nav-link" id="nav-video-tab" data-toggle="tab" href="#nav-video" role="tab" aria-controls="nav-video" aria-selected="false">Videos</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10" style="margin-left: -15px;">
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <!-- foto -->
+                                        <div class="tab-pane fade show active" id="nav-foto" role="tabpanel" aria-labelledby="nav-foto-tab"> 
+                                            <div id="exposition" class="carousel slide galleria carousel-fade" data-ride="carousel" >
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <a href="img/fotos/gally (1).jpeg" data-toggle="lightbox" data-gallery="gally"> 
+                                                            <img src="img/fotos/gally (1).jpeg" alt="gally (1)" class="img-fluid">
+                                                        </a>
+                                                        <a href="img/fotos/gally (2).jpeg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (2).jpeg" alt="gally (2)" class="img-fluid">
+                                                        </a>
+                                                        <a href="img/fotos/gally (3).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (3).jpg" alt="gally (3)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (4).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (4).jpg" alt="gally (4)">
+                                                        </a>    
+                                                        <a href="img/fotos/gally (5).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (5).jpg" alt="gally (2)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (6).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (6).jpg" alt="gally (6)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (7).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (7).jpg" alt="gally (7)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (8).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (8).jpg" alt="gally (8)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (9).jpg" data-toggle="lightbox" data-gallery="gally">    
+                                                            <img src="img/fotos/gally (9).jpg" alt="gally (9)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (10).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (10).jpg" alt="gally (10)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (11).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (11).jpg" alt="gally (11)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (12).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (12).jpg" alt="gally (12)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (13).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (13).jpg" alt="gally (13)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (14).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (14).jpg" alt="gally (14)">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <a href="img/fotos/gally (15).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (15).jpg" alt="gally (15)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (16).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (16).jpg" alt="gally (16)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (17).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (17).jpg" alt="gally (17)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (18).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (18).jpg" alt="gally (18)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (19).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (19).jpg" alt="gally (19)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (20).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (20).jpg" alt="gally (20)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (21).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (21).jpg" alt="gally (21)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (22).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (22).jpg" alt="gally (22)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (23).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (23).jpg" alt="gally (23)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (24).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (24).jpg" alt="gally (24)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (25).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (25).jpg" alt="gally (25)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (26).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (26).jpg" alt="gally (26)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (27).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (27).jpg" alt="gally (27)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (28).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (28).jpg" alt="gally (28)">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <a href="img/fotos/gally (29).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (29).jpg" alt="gally (29)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (30).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (30).jpg" alt="gally (30)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (31).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (31).jpg" alt="gally (31)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (32).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (32).jpg" alt="gally (32)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (33).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (33).jpg" alt="gally (33)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (34).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (34).jpg" alt="gally (34)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (35).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (35).jpg" alt="gally (35)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (36).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (36).jpg" alt="gally (36)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (37).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (37).jpg" alt="gally (37)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (38).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (38).jpg" alt="gally (38)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (39).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (39).jpg" alt="gally (39)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (40).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (40).jpg" alt="gally (40)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (41).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (41).jpg" alt="gally (41)">
+                                                        </a>
+                                                        <a href="img/fotos/gally (42).jpg" data-toggle="lightbox" data-gallery="gally">
+                                                            <img src="img/fotos/gally (42).jpg" alt="gally (42)">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                
+                                                <a class="carousel-control-prev btnNav" href="#exposition" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next btnNav" href="#exposition" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="tab-pane fade" id="nav-card" role="tabpanel" aria-labelledby="nav-card-tab"> 
+                                            cards - Charges 
+                                        </div>
+                                        <!-- podcast -->
+                                        <div class="tab-pane fade" id="nav-podcast" role="tabpanel" aria-labelledby="nav-podcast-tab"> 
+                                            Podcast - Audios 
+                                        </div>
+                                        <!-- videos -->
+                                        <div class="tab-pane fade" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">
+                                            Videos
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+                
+                <section class="conteudo">
+                    <div class="wrap">
+                        <h2 id="estudo">Estudos</h2>
+                        <div class="row">
+                            <div class="card column-3">
+                                <a href="rhema.html" title="Artigos">
+                                    <img src="img/rhema.jpg" class"card-img-top" alt="Rhema" />
+                                    <div class="card-body">
+                                        <h2>Rhema</h2>
+                                        <p class="card-text">
+                                            Proin ut augue ut erat tincidunt lacinia. Vestibulum vel justo 
+                                            dolor. Proin sodales laoreet arcu vel condimentum. Nunc tempor 
+                                            mattis neque, non laoreet turpis tristique nec. Vestibulum vitae ex 
+                                            pharetra, laoreet orci ac, vulputate risus.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="card column-3">
+                                <a href="reflexao.html" title="Reflexão do Dia">
+                                    <img src="img/reflexao.jpg" class"card-img-top" alt="Reflexao" />
+                                    <div class="card-body">
+                                        <h2>Reflexão</h2>
+                                        <p class="card-text">
+                                            Proin ut augue ut erat tincidunt lacinia. Vestibulum vel justo 
+                                            dolor. Proin sodales laoreet arcu vel condimentum. Nunc tempor 
+                                            mattis neque, non laoreet turpis tristique nec. Vestibulum vitae ex 
+                                            pharetra, laoreet orci ac, vulputate risus.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card column-3">
+                                <a href="artigos.html" title="Estudos da Semana">
+                                    <img src="img/pedidos.jpg" class"card-img-top" alt="Artigos" />
+                                    <div class="card-body">
+                                        <h2>Artigos</h2>
+                                        <p class="card-text">
+                                            Proin ut augue ut erat tincidunt lacinia. Vestibulum vel justo 
+                                            dolor. Proin sodales laoreet arcu vel condimentum. Nunc tempor 
+                                            mattis neque, non laoreet turpis tristique nec. Vestibulum vitae ex 
+                                            pharetra, laoreet orci ac, vulputate risus.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+                
+                <footer class="footer">
+                    <div class="wrap">
+                        <div class="logo">
+                            <img src="img/logo1a.png" alt="logo"/>
+                        </div>
+                        <p>Rua Firmino de Vasconcelos, 71, Ponta da Terra.</p>
+                        <p>27030-680</p>
+                        <p>Maceió - AL</p>
+                        <hr>
+                        <p>&copy; 2019 Igreja Manacial da Vida </p>
+                        <p style="text-transform: initial;">
+                            &#8471; Desenvolvido e mantido pela equipe Web / Ministério de Comunicação.
+                        </p>
+                    </p>
+                    <p>&#128303;</p>
+                </div>
+            </footer>
+            
+        </body>
+        
+        </html>
